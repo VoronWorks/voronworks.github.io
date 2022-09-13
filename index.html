@@ -25,15 +25,15 @@
     <li><a>ссылка без href</a></li>
     <li><a href="#">ссылка с пустым href</a></li>
     <li><a href="https://example.com/" rel="nofollow">ссылка, по которой запрещен переход поисковикам</a></li>
-    <li><noindex><a href="http://example.com/">запрещенная для индексации поисковиками</noindex></a> </li>
+    <li><!--noindex--><a href="http://example.com/">запрещенная для индексации поисковиками<!--/noindex--></a> </li>
     <li>Для того чтобы создать контекстную ссылку в тексте абзаца, можно воспользоваться <a href="http://example.com/">этим сайтом</a></li>
     <li><a href="image.jpg">ссылка-изображение</a></li>
     <li><a>ссылки из прямоугольных и круглых областей картинки (HTML-тег map)</a><br />
-  <img src="image.jpg" width="100" height="100" alt="прямоугольная ссылка"usemap= "#Navigation">
+  <img src="image.jpg" width="100" height="100" alt="прямоугольная ссылка" usemap= "#Navigation">
   <p><map id="Navigation" name="Navigation">
     <area shape="rect" coords="100,100,0,0" href="http://example.com" alt="1" title="Начало">
   </map></p>
-  <img src="image2.png" width="100" height="100" alt="круглая ссылка"usemap= "#nav">
+  <img src="image2.png" width="100" height="100" alt="круглая ссылка" usemap= "#nav">
   <p><map id="nav" name="nav">
     <area shape="circle" coords="50,50,50" href="http://example.com" alt="2" title="Меню">
   </map></p></li>
@@ -91,7 +91,7 @@ method="POST">
             <br />
             <select name="field-name-4[]"
               multiple="multiple">
-              <option value="Значение1"selected="selected"> бессмертие</option>
+              <option value="Значение1" selected="selected"> бессмертие</option>
               <option value="Значение2" >прохождение сквозь стены</option>
               <option value="Значение3">левитация</option>
             </select>
