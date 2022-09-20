@@ -1,14 +1,14 @@
 body {
-    background-color: rgb(252, 181, 151);
+    background-color: #fb9062;
   }
   
   a {
-    color: rgb(195, 84, 10);
+    color: #9b1d58;
 
   }
   nav {
     max-width:960px;
-     background-color:#f9cfcb;
+     background-color:rgb(250, 197, 128);
       margin: 0 auto;
        margin-top:20px;
         padding:10px;
@@ -24,17 +24,21 @@ body {
     margin-right:10%;
   }
   header {
-    color: rgb(251, 255, 125);
+    color: rgb(250, 217, 128);
     margin: 0 auto;
-    width:100%; background-color:#f9955c; padding: 10px; height:120px;
+    width:100%; background-color:	#e7555e; padding: 10px; height:120px;
+   
   }
   footer {
-    color: rgb(142, 92, 17);
+    color: 	rgb(250, 217, 128);
 
   }
-  even{
+
+  table tr even{
+    border:solid 1px #000;
     background-color: #fef8b6;
   }
-  odd{
-    background-color: #e4a62a;;
+  table tr odd{
+    border:solid 1px #000;
+    background-color: #EB697D;
   }
