@@ -12,8 +12,7 @@ body {
       margin: 0 auto;
        margin-top:20px;
         padding:10px;
-        flex:1;
-    order: 0;
+
   }
   nav ul{
     text-align: center;
@@ -24,8 +23,7 @@ nav ul li{
     display:inline-block;
     margin-left:10%;
     margin-right:10%;
-    flex:1;
-    order: 2;
+
   }
   header {
     color: rgb(250, 217, 128);
@@ -45,53 +43,4 @@ nav ul li{
   table tr odd{
     border:solid 1px #000;
     background-color: #EB697D;
-  }
-  #wrapper {
-    flex-direction: column;
-    display: flex;
-  }
-  #wrapper main, #wrapper aside{
-
-    margin: 10px;
-    padding: 10px;
-  }
-  #wrapper form {
-    flex: 1;
-    order: 5;
-  }
-  #wrapper main {
-    margin-top:-10px;
-    width:100%;
-    flex: 3;
-    order: 1;
-  }
-  #wrapper aside-1{
-    flex:1;
-    order: 3;
-  }
- #wrapper footer{
-  flex:1;
-  order:7;
- }
-  #wrapper table{
-    flex:1;
-    order: 4;
-  }
-  @media screen and (min-width: 800px) {
-    #wrapper nav ul li {
-      flex-direction: column;
-      margin-left:10%;
-      margin-right:10%;
-      flex:1;
-      order: 2;
-    }
-
-    #wrapper table{
-      flex:1;
-      order: 5;
-    }
-    #wrapper form {
-      flex: 1;
-      order: 4;
-    }
   }
