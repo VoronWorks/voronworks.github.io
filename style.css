@@ -20,7 +20,7 @@ body {
     padding-left:20px;
     padding-right:20px;
   }
-#wrapper nav ul li{
+nav ul li{
     display:inline-block;
     margin-left:10%;
     margin-right:10%;
