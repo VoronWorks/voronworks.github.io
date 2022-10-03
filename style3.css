@@ -12,14 +12,16 @@ body {
      width:100%; 
       margin: 0 auto;
        margin-top:20px;
-        padding:10px;
+        padding-top:10px;
         flex:1;
     order: 0;
+    
   }
   nav ul{
     text-align: center;
     padding-left:20px;
     padding-right:20px;
+    list-style-type:none;
   }
 
   header {
@@ -30,10 +32,11 @@ body {
      padding-top: 10px; 
     height:120px;
  max-width:960px;
+
   }
   footer {
     color: 	rgb(250, 217, 128);
-    max-width:100%; background-color:#e7555e; margin: 0 auto; margin-top:10px; padding:10px;
+    max-width:100%; background-color:#e7555e; margin: 0 auto; margin-top:10px; padding-top:10px;
   }
 
   table tr even{
@@ -48,7 +51,7 @@ body {
     float:left;margin:20px; width:100px; height:100px;
   }
   .div-1{
- background-color:rgb(250, 197, 128); margin: 0 auto; padding:10px;width:100%;
+ background-color:rgb(250, 197, 128); margin: 0 auto; padding-top:10px;width:100%;
   }
   #main-aside-wrapper {
     flex-direction: column;
@@ -65,6 +68,7 @@ body {
     background-color:	#e7555e;
     flex: 3;
     order: -1;
+
 
   }
   #main-aside-wrapper .aside-1{
@@ -102,10 +106,10 @@ body {
       order: 4;
     }
     nav{
-        max-width:960px;
+        max-width:960px;padding-left:20px;
     }
     header img{
-        float:left;margin:20px;margin-left:10%; width:100px; height:100px;
+        float:left;margin:20px; width:100px; height:100px;
       }
       nav ul li{
         display:inline-block;
@@ -113,6 +117,7 @@ body {
         margin-right:10%;
         flex:1;
         order: 2;
+        
       }
       .div-1{
         max-width:960px; background-color:rgb(250, 197, 128); margin: 0 auto; padding:10px;
