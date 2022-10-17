@@ -40,7 +40,7 @@ body {
   
     @font-face{
     font-family: 'Resagokr';
-    src:url(ResagokrBold.otf);
+    src:url("https://github.com/VoronWorks/voronworks.github.io/blob/main/ResagokrBold.otf");
     }
   table tr even{
     border:solid 1px #000;
