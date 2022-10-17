@@ -1,5 +1,6 @@
 body {
     background-color: #fb9062;
+    font-family: 'Resagokr';
   }
   
   a {
@@ -17,7 +18,8 @@ body {
     order: 0;
   }
   nav ul{
-    text-align: center;
+    text-align: left;
+    list-style-type:none;
     padding-left:20px;
     padding-right:20px;
   }
@@ -29,13 +31,17 @@ body {
     background-color:	#e7555e;
      padding-top: 10px; 
     height:120px;
- max-width:960px;
+ max-width:960px;text-align: right;
   }
   footer {
     color: 	rgb(250, 217, 128);
-    max-width:100%; background-color:#e7555e; margin: 0 auto; margin-top:10px; padding:10px;
-  }
-
+    max-width:100%;  margin: 0 auto; margin-top:10px; padding:10px;}
+  
+  
+    @font-face{
+    font-family: 'Resagokr';
+    src:url(ResagokrBold.otf);
+    }
   table tr even{
     border:solid 1px #000;
     background-color: #fef8b6;
@@ -50,69 +56,24 @@ body {
   .div-1{
  background-color:rgb(250, 197, 128); margin: 0 auto; padding:10px;width:100%;
   }
-  #main-aside-wrapper {
-    flex-direction: column;
-    display: flex;
-  }
-  #main-aside-wrapperwrapper main, #main-aside-wrapper aside{
-
-
-    padding-top: 10px;
-  }
-  #main-aside-wrapper main {
-    margin-top:-10px;
-    width:100%;
-    background-color:	#e7555e;
-    flex: 3;
-    order: -1;
-
-  }
-  #main-aside-wrapper .aside-1{
-    margin-top: 10px;
-    flex:1;
-    order: 2;
-  }
- #main-aside-wrapper .footer-1{
-    width:100%;
-    background-color:	#e7555e;
-  flex:1;
-  order:7;
- }
-  #main-aside-wrapper .aside-2{
-    flex:1;
-    order: 4;
-  }
-  #main-aside-wrapper .aside-3 {
-    flex: 1;
-    order: 3;
-  }
+  .row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;}
+ 
   @media screen and (min-width: 800px) {
-    #main-aside-wrapper nav ul li {
-      flex-direction: column;
-      flex:1;
-      order: 1;
-    }
-
-    #main-aside-wrapper .aside-2{
-      flex:1;
-      order: 3;
-    }
-    #main-aside-wrapper .aside-3 {
-      flex: 1;
-      order: 4;
-    }
+   
     nav{
         max-width:960px;
     }
     header img{
-        float:left;margin:20px;margin-left:10%; width:100px; height:100px;
+        float:left;margin:20px; width:100px; height:100px;
+      }
+      header{
+        text-align: left;
       }
       nav ul li{
         display:inline-block;
         margin-left:10%;
         margin-right:10%;
-        flex:1;
-        order: 2;
+margin-top:10px;
       }
       .div-1{
         max-width:960px; background-color:rgb(250, 197, 128); margin: 0 auto; padding:10px;
