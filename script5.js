@@ -11,6 +11,7 @@ window.addEventListener('DOMContentLoaded', function (event) {
       return false;
    }else{
     alert("Invalid input");
+       return false;
    }
     }
     function onClick(event) {
