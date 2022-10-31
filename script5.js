@@ -10,7 +10,8 @@ window.addEventListener('DOMContentLoaded', function (event) {
        alert(r.innerHTML);
       return false;
    }else{
-    alert("Invalid input");
+    alert("Ошибка ввода");
+       r.innerHTML="Неправильный ввод. Введите данные ещё раз.";
        return false;
    }
     }
