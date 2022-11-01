@@ -1,5 +1,8 @@
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('DOMContentLoaded', function (event) {
     console.log("DOM fully loaded and parsed");
+       let b = document.getElementById("my-button");
+  b.addEventListener("click", click1);
+
   });
     function click1() {
       let f1 = document.getElementsByName("field1");
@@ -10,8 +13,10 @@ window.addEventListener('DOMContentLoaded', function () {
        alert(r.innerHTML);
       return false;
    }else{
-    alert("Ошибка ввода");
-       r.innerHTML="Неправильный ввод. Введите данные ещё раз.";
-       return false;
+    alert("Invalid input");
+    r.innerHTML="Неправильный ввод";
+    return false;
    }
     }
+ 
+
