@@ -15,7 +15,3 @@ window.addEventListener('DOMContentLoaded', function () {
        return false;
    }
     }
-    function onClick(event) {
-    event.preventDefault();
-  
-  }
