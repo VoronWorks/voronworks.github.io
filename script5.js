@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', function (event) {
       return false;
    }else{
     alert("Invalid input");
-    r.innerHTML="Неправильный ввод";
+    r.innerHTML="Неправильный ввод. Попробуйте ввести данные ещё раз.";
     return false;
    }
     }
