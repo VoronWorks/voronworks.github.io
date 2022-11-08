@@ -45,7 +45,12 @@ function updatePrice() {
   });
   
   let prodPrice = document.getElementById("prodPrice");
+
   let f1 = document.getElementsByName("price");
+    window.addEventListener('change', function (event)
+    {
+      updatePrice();
+    });
   if(!isNaN(f1[0].value)&& f1[0].value!=0)
   prodPrice.innerHTML = price*f1[0].value + " рублей";
   else prodPrice.innerHTML = "";
@@ -103,3 +108,4 @@ window.addEventListener('DOMContentLoaded', function (event) {
 
   updatePrice();
 });
+
