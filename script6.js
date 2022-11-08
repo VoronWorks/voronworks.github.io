@@ -11,7 +11,7 @@ function updatePrice() {
   
   
   let radioDiv = document.getElementById("radios");
-  radioDiv.style.display = (select.value == "3" ? "block" : "none");
+  radioDiv.style.display = (select.value == "2" ? "block" : "none");
   
 
   let radios = document.getElementsByName("myradios");
@@ -28,7 +28,7 @@ function updatePrice() {
 
 
   let checkDiv = document.getElementById("checkboxes");
-  checkDiv.style.display = (select.value == "2" ? "block" : "none");
+  checkDiv.style.display = (select.value == "3" ? "block" : "none");
 
   let checkboxes = document.querySelectorAll("#checkboxes input");
   checkboxes.forEach(function(checkbox) {
