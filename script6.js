@@ -21,6 +21,8 @@ function updatePrice() {
       if (optionPrice !== undefined) {
         price += optionPrice;
       }
+      if(select.value!=2)
+      radio.checked=false;
     }
 
     
@@ -37,6 +39,8 @@ function updatePrice() {
       if (propPrice !== undefined) {
         price += propPrice;
       }
+      if(select.value!=3)
+      checkbox.checked=false;
     }
   });
   
@@ -57,7 +61,6 @@ function getPrices() {
       option3: 30,
     },
     prodProperties: {
-      prop1: 10,
       prop2: 20,
     }
   };
