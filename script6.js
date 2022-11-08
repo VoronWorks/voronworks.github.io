@@ -51,7 +51,7 @@ function updatePrice() {
     {
       updatePrice();
     });
-  if(!isNaN(f1[0].value)&& f1[0].value!=0)
+  if(!isNaN(f1[0].value)&& f1[0].value>0)
   prodPrice.innerHTML = price*f1[0].value + " рублей";
   else prodPrice.innerHTML = "";
    
