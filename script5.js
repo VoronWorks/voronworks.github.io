@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', function (event) {
       let f1 = document.getElementsByName("field1");
       let f2 = document.getElementsByName("field2");
       let r = document.getElementById("result"); r.innerHTML = f1[0].value * f2[0].value;
-      if(!isNaN(r.innerHTML&&r.innerHTML>0 && f1[0].value>0 && f2[0].value>0){
+      if(!isNaN(r.innerHTML)&& r.innerHTML>=0 && f1[0].value>0){
   
        alert(r.innerHTML);
       return false;
@@ -17,11 +17,12 @@ window.addEventListener('DOMContentLoaded', function (event) {
     r.innerHTML="Неправильный ввод. Попробуйте ввести данные ещё раз.";
     if(isNaN(f1[0].value))
     f1[0].value="";
-    if(isNaN(f2[0].value))
+    if(isNaN(f2[0].value)){
       f2[0].value="";
-    
+    }
     return false;
    }
+    
     }
  
 
