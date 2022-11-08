@@ -15,6 +15,11 @@ window.addEventListener('DOMContentLoaded', function (event) {
    }else{
     alert("Invalid input");
     r.innerHTML="Неправильный ввод. Попробуйте ввести данные ещё раз.";
+    if(isNaN(f1[0].value))
+    f1[0].value="";
+    if(isNaN(f2[0].value))
+      f2[0].value="";
+    
     return false;
    }
     }
