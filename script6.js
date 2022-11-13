@@ -9,7 +9,7 @@ function updatePrice() {
     price = prices.prodTypes[priceIndex];
   }
   let im = document.getElementById("image");
-  im.src="image"+select.value+".png";
+  im.src="work6/image"+select.value+".png";
   let radioDiv = document.getElementById("radios");
   radioDiv.style.display = (select.value == "2" ? "block" : "none");
   
