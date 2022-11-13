@@ -10,6 +10,7 @@ function updatePrice() {
   }
   let im = document.getElementById("image");
   im.src="work6/image"+select.value+".png";
+   console.log(im.src);
   let radioDiv = document.getElementById("radios");
   radioDiv.style.display = (select.value == "2" ? "block" : "none");
   
