@@ -8,8 +8,8 @@ function updatePrice() {
   if (priceIndex >= 0) {
     price = prices.prodTypes[priceIndex];
   }
-  
-  
+  let im = document.getElementById("image");
+  im.src="image"+select.value+".png";
   let radioDiv = document.getElementById("radios");
   radioDiv.style.display = (select.value == "2" ? "block" : "none");
   
@@ -20,6 +20,7 @@ function updatePrice() {
       let optionPrice = prices.myradios[radio.value];
       if (optionPrice !== undefined) {
         price += optionPrice;
+        im.src="image"+select.value+radio.value+".png";
       }
       if(select.value!=2)
       radio.checked=false;
@@ -38,6 +39,7 @@ function updatePrice() {
       let propPrice = prices.prodProperties[checkbox.name];
       if (propPrice !== undefined) {
         price += propPrice;
+        im.src="image"+select.value+checkbox.name+".png";
       }
       if(select.value!=3)
       checkbox.checked=false;
@@ -47,10 +49,7 @@ function updatePrice() {
   let prodPrice = document.getElementById("prodPrice");
 
   let f1 = document.getElementsByName("price");
-    window.addEventListener('change', function (event)
-    {
-      updatePrice();
-    });
+    
   if(!isNaN(f1[0].value)&& f1[0].value>0)
   prodPrice.innerHTML = price*f1[0].value + " рублей";
   else prodPrice.innerHTML = "";
@@ -66,6 +65,7 @@ function getPrices() {
       option3: 30,
     },
     prodProperties: {
+      prop1:15,
       prop2: 20,
     }
   };
@@ -105,7 +105,9 @@ window.addEventListener('DOMContentLoaded', function (event) {
       updatePrice();
     });
   });
-
+window.addEventListener('change', function (event)
+    {
+      updatePrice();
+    });
   updatePrice();
 });
-
