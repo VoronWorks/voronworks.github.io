@@ -76,35 +76,7 @@ window.addEventListener('DOMContentLoaded', function (event) {
   let radioDiv = document.getElementById("radios");
   radioDiv.style.display = "none";
 
-  let s = document.getElementsByName("prodType");
-  let select = s[0];
-
-  select.addEventListener("change", function(event) {
-    let target = event.target;
-    console.log(target.value);
-    updatePrice();
-  });
   
-
-  let radios = document.getElementsByName("myradios");
-  radios.forEach(function(radio) {
-    radio.addEventListener("change", function(event) {
-      let r = event.target;
-      console.log(r.value);
-      updatePrice();
-    });
-  });
-
-
-  let checkboxes = document.querySelectorAll("#checkboxes input");
-  checkboxes.forEach(function(checkbox) {
-    checkbox.addEventListener("change", function(event) {
-      let c = event.target;
-      console.log(c.name);
-      console.log(c.value);
-      updatePrice();
-    });
-  });
 window.addEventListener('change', function (event)
     {
       updatePrice();
