@@ -16,16 +16,6 @@ $('.multiple-items').slick({
         dots: true
       }
       
-    },
-    {
-      breakpoint: 510,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false
-      }
-      
     }
 
   ]
