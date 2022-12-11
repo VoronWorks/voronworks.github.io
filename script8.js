@@ -7,4 +7,11 @@ b.addEventListener("click", click1);
 });
 function click1() {
 window.history.pushState(nextState, nextTitle, nextURL);
+  if (form.style.display === 'none') {
+
+  form.style.display = 'block';
+} else {
+
+  form.style.display = 'none';
+}
 }
