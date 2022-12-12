@@ -1,23 +1,31 @@
-const nextURL = 'https://voronworks.github.io/index8.html';
-const nextTitle = 'My new page title';
-const nextState = { additionalInformation: 'Updated the URL with JS' };  
- const form = document.getElementById('form');
+
 window.addEventListener('DOMContentLoaded', function (event) {
-let b = document.getElementById("my-button");
-form.style.display = 'none';
-b.addEventListener("click", click1);
+var closedModalHashStateId = "";
+      var openModalHashStateId = "#form";
+       window.location.hash = closedModalHashStateId;
+      $('#myModal').on('show.bs.modal', function(e) {
+        window.location.hash = openModalHashStateId;
+      });  
 
+     
+          $(window).on('hashchange', function (event) {
+        if(window.location.hash == closedModalHashStateId) {
+            $('#myModal').modal('hide');
+        }
+    });
+    fetch('https://api.slapform.com/bB3DyW5Odz', {
+      method: "POST",
+  body: JSON.stringify({
+    name: 'Jon Snow',
+    email: 'email.com',
+    message: 'Hello World!',
+    })
+    })
+    .then(function (response) {
+    console.log('Success', response)
+    })
+    .catch(function (e) {
+    console.error('Fail', e)
+    })
 
-
-});
-function click1() {
-window.history.pushState(nextState, nextTitle, nextURL);
-
-if (window.location.href == 'https://voronworks.github.io/index8.html') {
-
-  form.style.display = 'block';
-} else {
-
-  form.style.display = 'none';
-}
-}
+    });
