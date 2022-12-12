@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-    <title>Задание 6</title>
+    <title>Задание 8</title>
      
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -10,56 +10,55 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+      <script src="https://cdn.jsdelivr.net/npm/slapform@latest/dist/index.min.js"></script>
+      <script type="text/javascript">
+        var slapform = new Slapform(); 
+      </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link rel="stylesheet" href="style4.css">
-    <script src="script6.js">
+    <script src="script8.js">
   </script>  
   
   </head>
   <body style="margin:0;">
-    <div class="container-fluid">
-      <div class="row d-flex  mx-sm-m3">
-         <div class="col-md-12  order-1 "style= "background-color:	#e7555e; width=100%">
-      
-    <a id="start"></a>
-    <header>
-
-
-    <img src="image.jpg" style="margin-top:10px;" alt="Логотип" />
-    <div style="margin-top:40px"><h2>Задание 6</h2></div>
-</header>  </div>
-
-<div class="col-md-12 align-self-center order-4 order-sm-5 "style= "   padding:10px"> <div class="div-1">
-  
- 
-  Тип товара:
-  
-  <form onsubmit="return false">
-    <select name="prodType">
-      <option value="1">Круг</option>
-      <option value="2">Четырёхугольник</option>
-      <option value="3">Другое</option>
-    </select>
-    <div><input name="price" type="text"placeholder="Количество"></div>
-    <div id="radios">
-      <label><input type="radio" name="myradios" value="option1"> Квадрат</label>
-      <label><input type="radio" name="myradios" value="option2"> Прямоугольник</label>
-      <label><input type="radio" name="myradios" value="option3"> Трапеция</label>
-    </div>
- 
-
-    <div id="checkboxes">
-      <label><input type="checkbox" name="prop1"> 5 вершин</label>
-      <label><input type="checkbox" name="prop2"> 6 вершин</label>
-    </div>
-  </form>
-   <img id="image" src="work6/image1.png" alt="image" style="width:200px; height:200px;"></img>
- <div id="prodPrice">Выберите тип товара</div>
-</div>
-<div class="col-md-12 order-7 " style= "background-color:	#e7555e"> <footer class="footer-1">(c) Воронова Анастасия 2022</footer></div>
-      </div></div>
+    <div style="text-align:center; padding-top:20%">
+    <button id="my-button" data-toggle="modal" data-target="#myModal">Форма</button></div>
+    <div class="modal fade" id="myModal" >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <form
+              
+    method="POST">
+     <h1>Форма</h1>
+     <label>
+    
+        <input name="field-name" type="name"
+          value="Имя" />
+      </label><br />
+    
+      <label>
+        <input name="field-email"
+          type="email"
+          placeholder="Введите вашу почту" />
+      </label><br />
+      <label>
+        <input name="field-msg"
+          type="message"
+          placeholder="Введите сообщение" />
+      </label><br />
+    
+    
+              <label><input type="checkbox" 
+                required name="check-1" />
+                с контрактом ознакомлен (а)</label><br />
+                <input type="submit" value="Отправить" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>   
     </body>
 
     </html> 
