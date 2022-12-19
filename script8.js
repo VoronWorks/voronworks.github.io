@@ -1,9 +1,9 @@
 
 window.addEventListener('DOMContentLoaded', function (event) {
 var state = null;
-      var btn2 = document.getElementById('my-button');
+      var btn = document.getElementById('my-button');
 var url = '#form';
-btn2.addEventListener('click', function Click2(event) {
+btn.addEventListener('click', function Click2(event) {
     if(state==null)
     {history.pushState("1", '', url)
 state=history.state; }
@@ -34,14 +34,9 @@ localStorage.setItem("msg",$('#field-msg').val());
         var msg= localStorage.getItem("msg");
         if(msg!=null) $('#field-msg').val(msg);
        }
-        var btn = document.getElementById('sub-button');
 
-btn.addEventListener('click', function Click1(event) {
 
-  //event.preventDefault();
 
-  
- 
 $(function(){
       $(".ajaxForm").submit(function(e){
           e.preventDefault();
@@ -68,10 +63,6 @@ $(function(){
           });
       });
   });
-  
-   
-});
-
     });
     
 
