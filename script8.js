@@ -1,19 +1,18 @@
+
 window.addEventListener('DOMContentLoaded', function (event) {
-var state = null;var t=1;
+var state = null;
       var btn2 = document.getElementById('my-button');
 var url = '#form';
 btn2.addEventListener('click', function Click2(event) {
     if(state==null)
     {history.pushState("1", '', url)
-state=history.state; t=2;}
+state=history.state; }
     else history.replaceState("2", '', url)
 });
 $(window).on('popstate', function (e) {
-    if(t==2)
-    {history.back();
-        $('#myModal').modal('hide');t=1;
-    state=null;}
-        else {history.forward(); t=2;}
+
+        $('#myModal').modal('hide');
+state=null;
     
 });
 
@@ -74,4 +73,6 @@ $(function(){
 });
 
     });
+    
+
     
